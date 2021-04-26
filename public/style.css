@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab", serif;
+  overflow-x: hidden;
+}
+
+#modal-container-flex,
+#modal-container-flex2 {
+  opacity: 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  height: 75vh;
+  transition: all 0.8s;
+  z-index: -1;
+}
+
+#modal-container-register,
+#modal-container-login {
+  background-image: url("./img/fondoLogin.png");
+  width: 70vh;
+  height: 70vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70vh;
+  height: 70vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+}
+
+#header-izq {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#header-dere {
+  display: flex;
+}
+
+.logo {
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  padding-top: 15px;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  align-content: center;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-right: 15px;
+  color: black;
+}
+
+.cesta {
+  width: 2vw;
+  cursor: pointer;
+}
+
+.cesta2 {
+  width: 8vw;
+  background-color: aliceblue;
+  display: none;
+  text-align: center;
+  color: black;
+}
+
+.buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  min-width: 30vw;
+}
+
+.barra-cesta > input {
+  width: 20vw;
+  height: 4.5vh;
+  border-radius: 15px;
+  padding: 15px;
+  outline: none;
+}
+
+.botones .barra-buscar {
+  outline: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.botones-login {
+  display: flex;
+  margin-left: 1.5vw;
+  margin-bottom: 1.5vh;
+}
+
+#div-main {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 30px; */
+}
+
+.games {
+  width: 10vw;
+  background-color: blue;
+  margin: 10px 10px 0 10px;
+}
+
+.juegosComprar {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+  height: 36vh;
+}
+
+.juegosPC {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+  height: 39vh;
+}
+
+.comprarGame {
+  width: 100%;
+}
+
+.juegosComprar:hover,
+.juegosPC:hover {
+  transition: all 0.6s;
+  transform: scale(1.1);
+  box-shadow: 8px -8px 40px rgba(0, 0, 0, 0.473);
+}
+
+.comprarGame > button {
+  margin-left: 20%;
+  margin-top: 10px;
+  width: 65%;
+  height: 3vh;
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  background-color: rgb(240, 47, 47);
+  color: aliceblue;
+  border-style: none;
+  cursor: pointer;
+}
+
+footer {
+  width: 99vw;
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.barra-cesta {
+  display: flex;
+  justify-content: space-between;
+  min-width: 24vw;
+}
+
+#btn-modal,
+#btn-modal2,
+#btn-logout {
+  background: none;
+  color: inherit;
+  border: none;
+  font-family: "Roboto Slab", serif;
+  padding-right: 30px;
+  padding-top: 0;
+  font-size: 1rem;
+  align-self: center;
+  color: #f02f2f;
+}
+
+#btn-modal:hover,
+#btn-modal2:hover,
+#btn-logout:hover {
+  cursor: pointer;
+}
+
+.login {
+  padding: 20px;
+}
+
+.modal > input {
+  margin-top: 12px;
+  height: 4vh;
+  width: 80%;
+  font-family: "Roboto Slab", serif;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal > button {
+  margin-top: 12px;
+  height: 4vh;
+  width: 10vw;
+  border-radius: 8px;
+  font-family: "Roboto Slab", serif;
+}
+
+#btn-login {
+  margin-top: 12px;
+  height: 4vh;
+  width: 10vw;
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  padding: 0;
+}
+
+.cabecera-modal {
+  display: flex;
+  color: black;
+}
+#close,
+#close2 {
+  padding-left: 25vw;
+  color: black;
+  cursor: pointer;
+}
+
+.admin-anyadir {
+  margin-top: 8vh;
+}
+
+.admin-anyadir,
+.admin-editar,
+.admin-eliminar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  background-image: url("./img/fondoLogin.png");
+}
+
+.admin-eliminar {
+  min-height: 45vh;
+}
+
+.admin-anyadir > input,
+.admin-editar > input,
+.admin-eliminar > input {
+  width: 50vw;
+  height: 5vh;
+  align-self: center;
+  margin-top: 15px;
+  font-family: "Roboto Slab", serif;
+  height: 4vh;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+}
+.admin-anyadir > select,
+.admin-editar > select,
+.admin-eliminar > select {
+  width: 50vw;
+  font-family: "Roboto Slab", serif;
+  height: 6vh;
+  padding: 10px;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.admin-anyadir > button,
+.admin-editar > button,
+.admin-eliminar > button {
+  width: 20vw;
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 4vh;
+  width: 10vw;
+  border-radius: 8px;
+  font-family: "Roboto Slab", serif;
+}
+.admin-anyadir > h1,
+.admin-editar > h1,
+.admin-eliminar > h1 {
+  padding: 20px;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin-left: 1%;
+  margin-top: 10vh;
+}
+
+.parrafos-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.parrafo {
+  padding: 25px;
+}
+
+.parrafo-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.mando {
+  width: 5vw;
+  margin-left: 35%;
+  padding-bottom: 2vh;
+}
+
+.linea1 {
+  margin-top: 50px;
+
+  margin-bottom: 3vh;
+  background-color: #f02f2f;
+}
+.linea2 {
+  margin-top: 50px;
+
+  background-color: #f02f2f !important;
+}
+
+.logos {
+  width: 2vw;
+}
+
+.animado {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.banner > img {
+  width: 99vw;
+  margin-bottom: 30px;
+}
+
+.titulo1 {
+  text-align: center;
+  color: #f02f2f;
+}
+
+.p-titulo1 {
+  width: 60vw;
+  padding-top: 20px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+hr {
+  background-color: #f02f2f;
+}

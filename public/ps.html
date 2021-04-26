@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Ventana modal Registro-->
+    <div id="modal-container-flex">
+      <div id="modal-container-register">
+        <p id="close">X</p>
+        <div class="cabecera-modal">
+          <h1>Registro</h1>
+        </div>
+        <div class="modal modal-close">
+          <input type="email" id="text-email" placeholder="Email" />
+          <input type="password" id="text-password" placeholder="Password" />
+          <button id="btn-register">Registrar</button>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- Ventana modal Login-->
+    <div id="modal-container-flex2">
+      <div id="modal-container-login">
+        <p id="close2">X</p>
+        <div class="cabecera-modal">
+          <h1>Login</h1>
+        </div>
+        <form action="/login" method="post" class="modal modal-close">
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <input type="submit" value="Login" id="btn-login" />
+        </form>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------- -->
+    <header>
+      <div id="header-izq">
+        <!-- <div class="logo">Logo</div> -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home <img class="logos" src="./img/home.png"/></a></li>
+            <li><a href="ps.html" style="border-bottom: 4px solid #f02f2f">PlayStation  <img class="logos" class="logos1" src="./img/playstation-logotype.png"/></a></li>
+            <li><a href="pc.html">PC  <img class="logos" class="logos2" src="./img/pc.png"/></a></li>
+            <li><a href="xbx.html">Xbox  <img class="logos" class="logos2"src="./img/xbox-logo.png"/></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="header-dere" class="users">
+        <div class="buscador">
+          <div class="botones-login">
+            <button id="btn-modal">Registro</button>
+            <button id="btn-modal2">Login</button>
+            <button id="btn-logout">Logout</button>
+          </div>
+          <div class="barra-cesta">
+            <input type="text" class="barra-buscar" id="barra-buscar" placeholder="Buscar Titulo, Presionar Enter" />
+            <div class="div-cesta">
+              <img src="./img/cesta.png" id="cesta" class="cesta" />
+              <div class="cesta2" id="cesta2"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+    <main>
+<div id="div-main">
+ <!--  <div class="banner">
+    <img src="./img/uncharted-4-1.jpg" alt="">
+  </div> -->
+</div>
+    </main>
+    <div class="seccion">
+      <hr class="linea1">
+      <div class="parrafos-flex">
+        <div class="parrafo" class="parrafo1">
+          <p>
+            <img class="mando" src="./img/control-de-juego.png" alt="" /></p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            esse, excepturi laboriosam recusandae fugiat ipsam. Voluptatum odit
+            minus ad blanditiis nulla nobis quos sit at, maxime ducimus, est,
+            eum incidunt! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Reiciendis esse, excepturi laboriosam recusandae fugiat ipsam.
+            Voluptatum odit minus ad blanditiis nulla nobis quos sit at, maxime
+            ducimus, est, eum incidunt!
+          </p>
+        </div>
+        <div class="parrafo" class="parrafo2">
+          <p>
+            <img class="mando" src="./img/consola-de-juego.png" alt="" /></p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            esse, excepturi laboriosam recusandae fugiat ipsam. Voluptatum odit
+            minus ad blanditiis nulla nobis quos sit at, maxime ducimus, est,
+            eum incidunt! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Reiciendis esse, excepturi laboriosam recusandae fugiat ipsam.
+            Voluptatum odit minus ad blanditiis nulla nobis quos sit at, maxime
+            ducimus, est, eum incidunt!
+          </p>
+        </div>
+        <div  class="parrafo" class="parrafo3">
+          <p>
+            <img class="mando" src="./img/control-de-juego (1).png" alt="" /></br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            esse, excepturi laboriosam recusandae fugiat ipsam. Voluptatum odit
+            minus ad blanditiis nulla nobis quos sit at, maxime ducimus, est,
+            eum incidunt! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Reiciendis esse, excepturi laboriosam recusandae fugiat ipsam.
+            Voluptatum odit minus ad blanditiis nulla nobis quos sit at, maxime
+            ducimus, est, eum incidunt!
+          </p>
+        </div>
+      </div>
+      <hr class="linea2">
+    </div>
+    <footer><h1>Footer</h1></footer>
+    <script src="./ps.js"></script>
+    <script src="./signup_user.js"></script>
+    <script src="./login_user.js"></script>
+    <script src="./animar.js"></script>
+  </body>
+</html>
