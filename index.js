@@ -115,7 +115,6 @@ app.get("/userEmail", (req, res) => {
 
 app.get("/logout", function (req, res) {
   req.logout();
-  console.log("entro");
 });
 
 // Puerto de escucha de Node
